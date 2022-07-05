@@ -1,0 +1,31 @@
+            <!-- Botones -->
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <!-- Boton menos -->
+                    <button (click)="cambiarValor(-5)"
+                            [ngClass]="btnClass"
+                            type="button">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </span>
+                <!-- Ingresar porcentaje-->
+                <input type="number" 
+                       class="form-control" 
+                       [ngClass]="{'is-invalid': progreso > 100 || progreso < 0 }"
+                       placeholder="Progreso"
+                       min="0"
+                       max="100"
+                       (ngModelChange)="onChange($event)"
+                       [(ngModel)]="progreso">
+                <!-- El [ngClass] nos ayuda a restringir que sea mayor a 100 o menor a cero cuando se escribe el numero  -->
+                <span class="input-group-btn">
+                     <!-- Botone mas -->
+                    <button (click)="cambiarValor(5)"
+                            [ngClass]="btnClass"
+                            type="button">
+                        <i class="fa fa-plus"></i>
+                        <!-- class="btn btn-inverse"  -->
+                    </button>
+                </span>
+            </div>
+            
