@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../services/settings.service';
+
+declare function customInitFunctions(): any;
+  
+
 
 @Component({
   selector: 'app-pages',
@@ -8,11 +13,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
-
+  //Se inyecta el servicio Settings
+  constructor( private settingsService: SettingsService) { }
+  //Version y a;o en el footer
   year = new Date().getFullYear();
+  versionOmega: string = 'V1.6.0.0';
 
   ngOnInit(): void {
+    customInitFunctions();
   }
 
 }

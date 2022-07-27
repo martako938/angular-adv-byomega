@@ -1,7 +1,7 @@
 /*
-Template Name: Admin Pro Admin
-Author: Wrappixel
-Email: niravjoshi87@gmail.com
+Template Name: Omega
+Author: Brayan Cabrera
+Email: martako938@gmail.com
 File: js
 */
 

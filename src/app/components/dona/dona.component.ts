@@ -9,8 +9,8 @@ import { ChartData, ChartEvent, ChartType } from 'chart.js';
 })
 export class DonaComponent  {
 
-  //Los valores que estan aqui para label los datos y color son los predeterminados 
-  //si el padre no envia nada
+  //Los valores que estan aqui son para el titulo, label (datos) y color  
+  //son los predeterminados si el padre (El componente grafica) no envia nada
   @Input() title: string = 'Gráfica nueva';
 
   @Input('labels') doughnutChartLabels: string[] = [ 'Label1', 'Label2', 'Label3' ];
