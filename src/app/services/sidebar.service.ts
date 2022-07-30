@@ -7,12 +7,14 @@ export class SidebarService {
  //Para hacer dinamicamente el menu lateral
   menu: any[] = [
     {
-      titulo: 'dashboard',
+      titulo: 'Dashboard',
       icono: 'mdi mdi-gauge',
       submenu: [
         {titulo: 'Main', url: '/' },
+        {titulo: 'Gráficas', url: 'grafica1' },
+        {titulo: 'rxjs', url: 'rxjs' },
+        {titulo: 'Promesas', url: 'promesas' },
         {titulo: 'ProgressBar', url: 'progress' },
-        {titulo: 'Graficas', url: 'grafica1' },
       ]
     }    
   ]; 

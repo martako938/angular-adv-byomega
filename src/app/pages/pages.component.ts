@@ -17,7 +17,7 @@ export class PagesComponent implements OnInit {
   constructor( private settingsService: SettingsService) { }
   //Version y a;o en el footer
   year = new Date().getFullYear();
-  versionOmega: string = 'V1.6.0.0';
+  versionOmega: string = 'V1.7.0.0';
 
   ngOnInit(): void {
     customInitFunctions();
