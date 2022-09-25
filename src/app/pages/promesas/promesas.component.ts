@@ -38,7 +38,7 @@ export class PromesasComponent implements OnInit {
 
   getUsuarios(){
     return new Promise( resolve => {
-      //Se concatena un apromesa con otra enseguida
+      //Se concatena una promesa con otra enseguida
       fetch('https://reqres.in/api/users')
         .then( resp => resp.json () )
         .then( body => resolve( body.data ) );
