@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+//Para hacer peticiones y se importa
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -21,7 +23,8 @@ import { RegisterComponent } from './register/register.component';
     CommonModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class AuthModule { }
