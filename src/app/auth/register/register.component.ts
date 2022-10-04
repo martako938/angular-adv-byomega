@@ -39,6 +39,7 @@ export class RegisterComponent {
     }
 
     //Si es valido realizar el posteo
+    
     // this.usuarioService.crearUsuario( this.registerForm.value )
     //     .subscribe( resp=> {
     //       console.log('Usuario creado');
